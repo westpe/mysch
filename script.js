@@ -22,10 +22,9 @@ function showCviceni(){
   cviceni = document.getElementsByClassName("cviceni");
 
   for (var i = 0; i < cviceni.length; i++) {
-    // console.log(pred[i]);
     cviceni[i].style.opacity = 1;
   }
-  }
+}
 
 function showPred(){
   cviceni = document.getElementsByClassName("cviceni");
