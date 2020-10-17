@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="javascript/action.js"></script>
+    <title>My schedule</title>
+  </head>
+  <body class="border-back">
+    <div>
+      <div id="time">here will be time</div>
+      <button type="button" id ="showPred" onclick="showPred()">just pred</button>
+      <button id ="showCviceni" onclick="showCviceni()">just cviceni</button>
+      <button id ="showAll" onclick="showAll()">show All</button>
+    </div>
+    <table class="top">
+      <thead>
+        <th></th>
+        <th>7:15 8:00</th>
+        <th>8:00 8:45</th>
+        <th>9:00 9:45</th>
+        <th>9:45 10:30</th>
+        <th>10:45 11:30</th>
+        <th>11:30 12:15</th>
+        <th>12:30 13:15</th>
+        <th>13:15 14:00</th>
+        <th>14:15 15:00</th>
+        <th>15:00 15:45</th>
+        <th>16:00 16:45</th>
+        <th>16:45 17:30</th>
+      </thead>
+      <tbody>
+        <tr class="border_bottom">
+          <th>Monday</th>
+          <td></td>
+          <td id=mo1></td>
+          <td id=mo2 colspan="2" class="pred">VIA</td>
+          <td id=mo4 colspan="2" class="cviceni">VIA</td>
+          <td id=mo6 colspan="2" class="pred">POS</td>
+          <td id=mo8 colspan="2" class="cviceni">VIS</td>
+          <td id=mo10 ></td>
+          <td id=mo11 ></td>
+        </tr>
+        <tr>
+          <th>Tuesday</th>
+          <td id=tu1></td>
+          <td id=tu2 colspan="2" class="cviceni">AT.NET</td>
+          <td id=tu4 colspan="2" class="cviceni">ESPORT</td>
+          <td id=tu6></td>
+          <td id=tu7></td>
+          <td id=tu8 colspan="2" class="pred">VIS</td>
+          <td id=tu10></td>
+          <td id=tu11></td>
+          <td id=tu12></td>
+        </tr>
+        <tr>
+          <th>Wednesday</th>
+          <td id=we1 colspan="3" class="cviceni">POS</td>
+          <td id=we4></td>
+          <td id=we5></td>
+          <td id=we6 colspan="2" class="pred">AT.NET</td>
+          <td id=we8 colspan="2" class="pred">ESPORT</td>
+          <td id=we10></td>
+          <td id=we11></td>
+          <td id=we12></td>
+        </tr>
+        <tr>
+          <th>Thursday</th>
+          <td id=th1></td>
+          <td id=th2></td>
+          <td id=th3></td>
+          <td id=th4></td>
+          <td id=th5></td>
+          <td id=th6></td>
+          <td id=th7></td>
+          <td id=th8></td>
+          <td id=th9></td>
+          <td id=th10></td>
+          <td id=th11></td>
+          <td id=th12></td>
+        </tr>
+        <tr>
+          <th>Friday</th>
+          <td id=fr1></td>
+          <td id=fr2></td>
+          <td id=fr3></td>
+          <td id=fr4></td>
+          <td id=fr5></td>
+          <td id=fr6></td>
+          <td id=fr7></td>
+          <td id=fr8></td>
+          <td id=fr9></td>
+          <td id=fr10></td>
+          <td id=fr11></td>
+          <td id=fr12></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="pointer">
+              <div></div>
+              <div></div>
+          </div>
+  </body>
+</html>
