@@ -64,3 +64,16 @@ td{
   background-color: purple;
   margin-top: -6px;
 }
+
+.poznamka {
+            width: 500px; height: 400px; position: absolute; margin: 30%; top: -30%; border: black solid; background-color: white; border-radius: 15px; z-index: 1; padding: 20px;
+        }
+
+        #momentalni_hodina {
+            background-color: blue;
+            position: absolute;
+            width: 10px;
+            height: 100px;
+            z-index: 10;
+            display: none;
+        }
