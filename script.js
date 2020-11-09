@@ -1,12 +1,12 @@
 window.addEventListener('load', function(event){
   date = new Date();
-  // updateTimeString();
+  updateTimeString();
 
   setInterval(
     function(){
         date = new Date();
-        // updateTimeString();
-        // movePointer();
+        updateTimeString();
+        movePointer();
     },1000);
 })
 
@@ -60,7 +60,7 @@ function showAll(){
 }
 
 function updateTimeString(){
-  document.getElementById("time").innerText = date.toLocaleString();
+  document.getElementById("time").innerHTML = Date();
 }
 
 function movePointer(){
@@ -127,10 +127,6 @@ function movePointer(){
 
 
 function Onload() {
-    Interval();
-    setInterval(function(){
-      Interval();
-    }, 1000);
     var poznamka = document.getElementsByClassName('poznamka');
     var hodiny = document.getElementsByClassName('hodina');
     for(var i = 0; i < hodiny.length; i++) {
@@ -153,45 +149,4 @@ function Onload() {
             }
         }
     }
-}
-
-
-function Interval() {
-      document.getElementById("time").innerHTML = Date();
-      var d = new Date("10-16-2020 20:39");
-      d=new Date();
-      var day = d.getDay();
-      var hour = d.getHours();
-      var minute = d.getMinutes();
-      var cas = 60*hour+minute;
-      if(cas>=435 && cas <=1050) {   // 7:15 - 17:30
-        cas=cas-435;
-        var pom = cas/105;
-        pom = Math.floor(pom);
-
-        var pom2 = (cas+20)/105;
-        pom2 = Math.floor(pom2);
-
-        if(pom==pom2) {
-            pom=pom*33;
-            var left = 130+cas*2.22-pom;
-        } else {
-            pom=((pom+1)*2*100)-10;
-            var left = 130+pom;
-        }
-
-        if(day>=1 && day<=5) {     // po - pá
-            var top=100+100*day;
-            document.getElementById("momentalni_hodina").style.left = left;
-            document.getElementById("momentalni_hodina").style.top = top;
-            document.getElementById("momentalni_hodina").style.display = "block";
-        } else {
-            document.getElementById("momentalni_hodina").style.display = "none";
-            document.getElementById("momentalni_hodina").style.display = "none";
-        }
-
-      }  else {
-          document.getElementById("momentalni_hodina").style.display = "none";
-          document.getElementById("momentalni_hodina").style.display = "none";
-      }
 }
