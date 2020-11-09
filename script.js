@@ -60,7 +60,7 @@ function showAll(){
 }
 
 function updateTimeString(){
-  document.getElementById("time").innerHTML = Date();
+  document.getElementById("time").innerText = date.toLocaleString();
 }
 
 function movePointer(){

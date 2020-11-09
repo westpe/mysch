@@ -22,7 +22,6 @@ tbody{
 th{
   background-color: #f6f5f5;
   text-align: center;
-  text-decoration-color: red;
   padding: 10px;
   border: 2px solid black;
   width: 100px;
@@ -67,13 +66,4 @@ td{
 
 .poznamka {
             width: 500px; height: 400px; position: absolute; margin: 30%; top: -30%; border: black solid; background-color: white; border-radius: 15px; z-index: 1; padding: 20px;
-        }
-
-        #momentalni_hodina {
-            background-color: blue;
-            position: absolute;
-            width: 10px;
-            height: 100px;
-            z-index: 10;
-            display: none;
         }
